@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">callAnl</string>
+    <string name="title_section3">趋势</string>
+    <string name="title_section2">短信统计</string>
+    <string name="title_section1">通话统计</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Choose</string>
+    <string name="action_title_main">Choose Chart</string>
+</resources>

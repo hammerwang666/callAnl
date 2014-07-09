@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              tools:ignore="MergeRootFrame"
+              android:orientation="vertical"
+
+
+        >
+
+    <ListView android:id="@+id/mylist"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:background="@drawable/repeat_bg"
+            />
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginBottom="6dip"
+            android:background="@drawable/cellback"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+
+                >
+            <TextView
+                    android:id="@+id/num"
+                    style="@style/CardTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:ellipsize="end"
+                    />
+            <ImageView android:id="@+id/header"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                    />
+
+            <TextView
+                    android:id="@+id/name"
+                    style="@style/CardTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="2dip"
+                    android:ellipsize="end"
+                    />
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/stroke"/>
+        <!--<View-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:background="@drawable/divider"/>-->
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/selectable_background_cardbank"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:padding="4dp">-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="4dp">
+
+            <TextView
+                    android:id="@+id/content"
+                    style="@style/CardText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:paddingBottom="10dip"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
